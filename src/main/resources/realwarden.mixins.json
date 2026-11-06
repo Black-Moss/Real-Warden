@@ -1,15 +1,15 @@
 {
-	"required": true,
-	"package": "com.blackmoss.realwarden.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"SniffingMixin",
-		"WardenEntitySensorMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "package": "com.blackmoss.realwarden.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SniffingMixin",
+    "WardenEntitySensorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
 }

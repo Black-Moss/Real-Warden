@@ -64,5 +64,5 @@ publishing {
 }
 
 tasks.named('jar', Jar).configure {
-    archiveFileName = "${project.mod_id}-${project.mod_version}-Fabric-${project.minecraft_version}.jar"
+    archiveFileName = "${mod_id}-${mod_version}-Fabric-1.19+.jar"
 }
