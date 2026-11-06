@@ -2,7 +2,10 @@
   "required": true,
   "package": "com.blackmoss.realwarden.mixin",
   "compatibilityLevel": "JAVA_25",
-  "mixins": [],
+  "mixins": [
+    "SniffingMixin",
+    "WardenEntitySensorMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
