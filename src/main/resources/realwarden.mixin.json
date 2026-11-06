@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.blackmoss.averylooongmodname.mixin",
+  "package": "com.blackmoss.realwarden.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [],
   "injectors": {

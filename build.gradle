@@ -20,11 +20,6 @@ sourceSets.main.resources {
 
 repositories {
     maven {
-        name = 'JEI Maven'
-        url = 'https://maven.blamejared.com/'
-    }
-
-    maven {
         name = "Modrinth Maven"
         url = "https://api.modrinth.com/maven"
     }
@@ -85,11 +80,6 @@ configurations {
 }
 
 dependencies {
-    // JEI
-    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
-    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
-    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
-    runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
