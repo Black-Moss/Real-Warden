@@ -1,34 +1,40 @@
-.gradle
+# gradle
+
+.gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/**/build/
+out/
+classes/
+
+# eclipse
+
+*.launch
+
+# idea
 
 .idea/
-*.iws
 *.iml
 *.ipr
-out/
-!**/src/**/out/
+*.iws
 
-.run/
+# vscode
 
-.apt_generated
-.classpath
-.eclipse/
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/**/bin/
-
+.settings/
 .vscode/
+bin/
+.classpath
+.project
 
-.DS_Store
+# macos
+
+*.DS_Store
+
+# fabric
 
 run/
-!**/src/**/run/
-**/src/generated/**/.cache/
-repo/
-!**/src/**/repo/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr

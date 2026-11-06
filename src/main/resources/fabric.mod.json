@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "realwarden",
+	"version": "${version}",
+	"name": "Real Warden",
+	"description": "I have no eyes, and I must KILL YOU.",
+	"authors": [
+		"Black_Moss"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/real-warden",
+		"sources": "https://github.com/Black-Moss/Real-Warden/issues"
+	},
+	"license": "LGPL-3.0",
+	"icon": "logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.blackmoss.realwarden.RealWarden"
+		]
+	},
+	"mixins": [
+      "realwarden.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.19",
+		"java": ">=17",
+		"fabric": "*"
+	}
+}

@@ -1,11 +1,11 @@
 package com.blackmoss.realwarden;
 
-import net.neoforged.fml.common.Mod;
+import net.fabricmc.api.ModInitializer;
 
-@Mod(RealWarden.MODID)
-public class RealWarden {
-    public static final String MODID = "realwarden";
+public class RealWarden implements ModInitializer {
+    public static final String MOD_ID = "realwarden";
 
-    public RealWarden() {
-    }
+	@Override
+	public void onInitialize() {
+	}
 }
