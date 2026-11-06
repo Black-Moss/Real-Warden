@@ -15,7 +15,6 @@ group = mod_group_id
 sourceSets.main.resources {
     srcDir('src/generated/resources')
 
-    exclude("**/*.bbmodel")
     exclude("src/generated/**/.cache")
 }
 
@@ -35,7 +34,7 @@ base {
     archivesName = mod_id
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
     version = project.neo_version
@@ -69,6 +68,7 @@ neoForge {
 
         configureEach {
             systemProperty 'forge.logging.markers', 'REGISTRIES'
+
             logLevel = org.slf4j.event.Level.DEBUG
         }
     }
@@ -133,5 +133,5 @@ idea {
 }
 
 tasks.named('jar', Jar).configure {
-    archiveFileName = "${mod_id}-${mod_version}-NeoForge-1.20.4.jar"
+    archiveFileName = "${mod_id}-${mod_version}-NeoForge-1.20.5+.jar"
 }
