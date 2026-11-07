@@ -20,15 +20,6 @@ sourceSets.main.resources {
 }
 
 repositories {
-    maven {
-        name = "Modrinth Maven"
-        url = "https://api.modrinth.com/maven"
-    }
-
-    maven {
-        name = 'Curse Maven'
-        url = 'https://cursemaven.com'
-    }
 }
 
 base {
@@ -133,5 +124,5 @@ idea {
 }
 
 tasks.named('jar', Jar).configure {
-    archiveFileName = "${mod_id}-${mod_version}-NeoForge-1.20.4.jar"
+    archiveFileName = "${mod_id}-${mod_version}-NeoForge-1.20.4+.jar"
 }
