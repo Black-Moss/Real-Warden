@@ -16,9 +16,9 @@ public abstract class WardenEntitySensorMixin {
             at = @At("TAIL")
     )
     private void realwarden$EraseScentTarget(
-            ServerLevel level,
-            Warden body,
+            ServerLevel serverLevel,
+            Warden warden,
             CallbackInfo ci) {
-        body.getBrain().eraseMemory(MemoryModuleType.NEAREST_ATTACKABLE);
+        warden.getBrain().eraseMemory(MemoryModuleType.NEAREST_ATTACKABLE);
     }
 }

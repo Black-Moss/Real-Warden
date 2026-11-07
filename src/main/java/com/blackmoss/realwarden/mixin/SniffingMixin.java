@@ -18,15 +18,15 @@ public abstract class SniffingMixin {
             cancellable = true
     )
     private void realwarden$CancelScentResult(
-            ServerLevel level,
-            Warden body,
-            long timestamp,
+            ServerLevel serverLevel,
+            Warden warden,
+            long l,
             CallbackInfo ci) {
-        if (body.hasPose(Pose.SNIFFING)) {
-            body.setPose(Pose.STANDING);
+        if (warden.hasPose(Pose.SNIFFING)) {
+            warden.setPose(Pose.STANDING);
         }
 
-        body.getBrain().eraseMemory(MemoryModuleType.IS_SNIFFING);
+        warden.getBrain().eraseMemory(MemoryModuleType.IS_SNIFFING);
         ci.cancel();
     }
 }
