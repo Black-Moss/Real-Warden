@@ -1,11 +1,11 @@
 package com.blackmoss.realwarden;
 
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.DedicatedServerModInitializer;
 
-public class RealWarden implements ModInitializer {
+public class RealWarden implements DedicatedServerModInitializer {
     public static final String MOD_ID = "realwarden";
 
     @Override
-    public void onInitialize() {
+    public void onInitializeServer() {
     }
 }
