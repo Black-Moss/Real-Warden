@@ -133,5 +133,5 @@ idea {
 }
 
 tasks.named('jar', Jar).configure {
-    archiveFileName = "${mod_id}-${mod_version}-NeoForge-1.20.5+.jar"
+    archiveFileName = "${mod_id}-${mod_version}-NeoForge-1.20.6+.jar"
 }
