@@ -3,7 +3,7 @@
   "id": "realwarden",
   "version": "${version}",
   "name": "Real Warden",
-  "description": "I have no eyes, and I must KILL YOU.",
+  "description": "Remove the sense of smell from Warden so that it can only locate by sound.",
   "authors": [
     "Black_Moss"
   ],
