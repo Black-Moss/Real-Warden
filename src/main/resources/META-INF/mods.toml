@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[41,)"
+license = "LGPL-3.0"
+issueTrackerURL = "https://github.com/Black-Moss/Real-Warden/issues"
+
+[[mods]]
+modId = "realwarden"
+version = "1.0.0"
+displayName = "Real Warden"
+logoFile = "logo.png"
+authors = "Black_Moss"
+description = "Remove the sense of smell from Warden so that it can only locate by sound."
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/real-warden"
+
+[[mixins]]
+config = "realwarden.mixins.json"
+
+[[dependencies.realwarden]]
+modId = "forge"
+mandatory = true
+ordering = "NONE"
+side = "SERVER"
+
+[[dependencies.realwarden]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19,)"
+ordering = "NONE"
+side = "SERVER"
