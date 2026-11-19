@@ -5,3 +5,5 @@
 # Real Warden
 
 Remove the sense of smell from Warden so that it can only locate by sound.
+
+*In theory there shouldn't be any compatibility issues, and this mod **will not receive further updates.***
